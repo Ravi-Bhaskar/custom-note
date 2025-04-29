@@ -8,7 +8,7 @@ npm run dev
 
 # Why? – Design Decisions
 
-## Storage Strategy
+## Storage Strategy 
 ### Why localStorage?
 > localStorage is ideal for small-scale, client-only persistence. It doesn’t require backend APIs, is easy to use, and fits the project's constraints (no remote backend).
 
