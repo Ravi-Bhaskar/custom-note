@@ -18,8 +18,10 @@ const NotesList = () => {
       ) : (
         notes.map((note, index) => (
           <div className="note-card" key={index}>
-            <h3>{note.title}</h3>
-            <p>{note.content}</p>
+            <div className="note-details">
+              <h3>{note.title}</h3>
+              <p>{note.content}</p>
+            </div>
           </div>
         ))
       )}

@@ -6,6 +6,7 @@ body {
 }
 
 .main-container nav {
+  width: 100%;
   background: #ffffff;
   padding: 15px 10px;
   display: flex;
@@ -48,12 +49,15 @@ body {
 .note-card {
   background: #f9f9f9;
   margin: 10px;
-  padding: 15px;
   border-radius: 8px;
   text-align: left;
   width: 100%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   border: 1px solid #ccc;
+}
+
+.note-details {
+  padding: 15px;
 }
 
 input,
@@ -103,4 +107,22 @@ button[disabled] {
   border-radius: 6px;
   width: 100%;
   text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+  .form-container,
+  .note-list-container {
+    width: 90%;
+    padding: 20px 10px;
+  }
+
+  input,
+  textarea {
+    display: block;
+  }
+
+  .nav-bar {
+
+    gap: 10px;
+  }
 }
